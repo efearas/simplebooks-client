@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "app.simplebooks.app.twa",
+                 "sha256_cert_fingerprints": ["2C:1D:E0:5D:78:A0:B8:A8:EA:3D:DD:01:BE:A7:DF:42:34:65:C8:BE:B9:10:59:E4:AE:F9:90:F1:F6:9E:C4:39"] }
+  }]

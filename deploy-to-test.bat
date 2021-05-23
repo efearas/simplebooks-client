@@ -1,0 +1,1 @@
+yarn build & aws s3 sync D:\yedek\simple-books\build s3://simple-books-test --acl public-read & aws cloudfront create-invalidation --distribution-id E2BUAMXE7UEJL4 --paths "/*"
