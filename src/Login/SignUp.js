@@ -144,9 +144,9 @@ export default function SignUp(props) {
                     :
                     <React.Fragment>
 
-                        <Typography>
+                        <Typography className="test123" name="heading">
                             Sign up to Simple Books
-                </Typography>
+                        </Typography>
                         <TextField onChange={(e) => setEmail(e.target.value)} helperText={emailError} error={emailError != "" ? true : false} id="email" label="e-mail"
                             InputProps={{
                                 startAdornment: (
@@ -191,10 +191,11 @@ export default function SignUp(props) {
                             <Checkbox
                                 id="agreement-cb"
                                 color="primary"
+                                data-testid="agreement-cb"
                                 inputProps={{ 'aria-label': 'secondary checkbox' }}
                                 onChange={()=>setAgreeChecked(!agreeChecked)}
                             />
-                            <div style={{color: agreeCheckError? 'red': 'black'}}>
+                            <div style={{color: agreeCheckError? 'red': 'black'}} data-testid="aggrement-line">
                                 I agree to the SimpleBooks <a href="https://app.simplebooks.app/terms-of-service.html" target="_blank">Terms of Service</a>  and <a href="https://app.simplebooks.app/privacy-policy.html" target="_blank">Privacy Policy</a>
                             </div>
                         </div>
